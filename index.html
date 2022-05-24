@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="sass/main.scss" />
+    <script defer src="script.js"></script>
+    <title>Home rent by Paolm</title>
+  </head>
+  <body>
+    <button class="contacts">
+      <span class="material-symbols-rounded"> chat </span>
+    </button>
+
+    <ul class="flags">
+      <li>
+        <a href="#" class="flags__link">
+          <img src="flags/gb.svg" alt="" />
+          <span>en</span></a
+        >
+      </li>
+      <li>
+        <a href="#" class="flags__link"
+          ><img src="flags/it.svg" alt="" /><span>fr</span></a
+        >
+      </li>
+      <li>
+        <a href="#" class="flags__link"
+          ><img src="flags/fr.svg" alt="" /><span>it</span></a
+        >
+      </li>
+    </ul>
+
+    <header class="header">
+      <a href="#" class="header__link-site"
+        ><p>Cala Verdegiglio</p>
+        <img
+          src="others/png_starfish_4761.png"
+          alt="starfish"
+          class="header__link-site__img"
+      /></a>
+      <ul class="header__nav">
+        <li>
+          <a href="#">Servizi</a>
+        </li>
+        <li>
+          <a href="#">Galleria</a>
+        </li>
+        <li>
+          <a href="#">Tariffe</a>
+        </li>
+        <li><a href="#">Contattaci</a></li>
+      </ul>
+      <h1 class="header__heading-primary">Cala Verdegiglio</h1>
+      <h2 class="header__heading-secondary">Home</h2>
+      <p class="header__location">Monopoli | Puglia</p>
+      <a href="#" class="header__link-book">Prenota</a>
+    </header>
+
+    <section class="section section--description">
+      <div class="section__title">
+        <h2 class="section__title__header">Cala Verdegiglio</h2>
+        <p class="section__title__description">
+          La nostra storia è la nostra ospitalità
+        </p>
+      </div>
+
+      <div class="section--description__container">
+        <div class="section--description__img-container">
+          <img
+            src="images/kam-idris-_HqHX3LBN18-unsplash.webp"
+            alt="kitchen"
+            class="section--description__img"
+          />
+        </div>
+
+        <div class="section--description__info">
+          <h3 class="section--description__header">
+            <span>Cala Verdegiglio</span> nel Cuore della Puglia
+          </h3>
+          <p>
+            Cala Verdegiglio Home è una Locazione turistica situata nel cuore di
+            Monopoli, a 10 minuti a piedi dalla Stazione Ferroviaria, 500mt dal
+            centro e a 100 metri dalla caletta “Cala Verdegiglio” ,una spiaggia
+            sabbiosa incorniciata da grandi massi e libera al pubblico.
+          </p>
+          <h4 class="section--description__sub-header">
+            <span>Cala Verdegiglio Home</span> può ospitare fino a 4 persone. Si
+            compone di:
+          </h4>
+          <ul class="section--description__list">
+            <li>
+              <span>n.1 Camera da letto</span> matrimoniale con cabina armadio,
+            </li>
+            <li>bagno con doccia</li>
+            <li><span>cucina/zona giorno</span> con divano letto</li>
+            <li>
+              al secondo piano di <span>Cala Verdegiglio</span>, si accede alla
+              <span>vasta terrazza vista mare</span> completa di ogni singolo
+              comfort:
+
+              <ul class="section--description__sub-list">
+                <li>
+                  Una doccia esterna, da utilizzare nei pomeriggi più caldi
+                </li>
+                <li>un Barbecue, per buonissime grigliate</li>
+                <li>
+                  un angolo Relax e un tavolo completano l’arredo della terrazza
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="section--description__icons">
+            <p>
+              <span class="material-symbols-rounded"> house </span>65mq Home
+            </p>
+            <p>
+              <span class="material-symbols-rounded"> deck </span>80mq Terrace
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="background-gray">
+      <section class="section section--services">
+        <div class="section__title">
+          <h2 class="section__title__header">Servizi</h2>
+          <p class="section__title__description">
+            Tutto quello che ti serve per godere della tua vacanza
+          </p>
+        </div>
+
+        <div class="section--services__icons">
+          <div>
+            <span class="material-symbols-rounded"> styler </span>
+            <p>Completo Biancheria al check-in</p>
+          </div>
+          <div>
+            <span class="material-symbols-rounded"> flatware </span>
+            <p>Stoviglie</p>
+          </div>
+          <div>
+            <span class="material-symbols-rounded"> coffee_maker </span>
+            <p>Macchina del caffè</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> fireplace </span>
+            <p>Angolo Cottura</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> oven_gen </span>
+            <p>Forno Elettrico</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> beach_access </span>
+            <p>Area Relax</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> air </span>
+            <p>Asciuga Capelli</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> wifi </span>
+            <p>Wi-fi</p>
+          </div>
+          <div>
+            <span class="material-symbols-rounded"> dishwasher_gen </span>
+            <p>Asciugatrice</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded">local_laundry_service</span>
+            <p>Lavatrice</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> dishwasher_gen </span>
+            <p>Lavastoviglie</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> mode_heat </span>
+            <p>Riscaldamento</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> iron </span>
+            <p>Ferro da stiro</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> tv_with_assistant </span>
+            <p>Smart-Tv</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> kettle </span>
+            <p>Bollitore</p>
+          </div>
+          <div>
+            <span class="material-symbols-rounded"> ac_unit </span>
+            <p>Aria Condizionata</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> back_hand </span>
+            <p>Zanzariere</p>
+          </div>
+
+          <div>
+            <span class="material-symbols-rounded"> outdoor_grill </span>
+            <p>Barbecue</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section section--rooms">
+      <div class="section__title">
+        <h2 class="section__title__header">I nostri Ambienti</h2>
+      </div>
+
+      <div class="section--rooms__container">
+        <div class="section--rooms__room">
+          <img src="images/minh-pham-7pCFUybP_P8-unsplash.webp" alt="" />
+          <p>kitchen</p>
+        </div>
+        <div class="section--rooms__room">
+          <img src="images/naomi-hebert-MP0bgaS_d1c-unsplash.webp" alt="" />
+          <p>bedroom</p>
+        </div>
+        <div class="section--rooms__room">
+          <img src="images/pixasquare-4ojhpgKpS68-unsplash.webp" alt="" />
+          <p>bathroom</p>
+        </div>
+        <div class="section--rooms__room">
+          <img src="images/kenny-eliason-mGZX2MOPR-s-unsplash.webp" alt="" />
+          <p>terrace</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="background-photo">
+      <section class="section section--cta">
+        <h2>Scappa dalla tua routine e Vieni a Cala Verdegiglio</h2>
+        <p>
+          Tutta la liberta di un abitazione indipendente con il comfort di una
+          struttura ricettiva Cala Verdegiglio Home. Goditi delle grigliate
+          favolose sulla terrazza vista mare, raggiungi la caletta “Verdegiglio”
+          a soli 100mt da casa. Visita Monopoli ed esplora la Puglia.
+        </p>
+        <button>Contattaci</button>
+      </section>
+    </div>
+
+    <section class="section section--gallery">
+      <div class="section__title">
+        <h2 class="section__title__header">Galleria</h2>
+      </div>
+
+      <div class="section--gallery__container">
+        <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.webp" alt="" />
+        <img src="images/minh-pham-OtXADkUh3-I-unsplash.webp" alt="" />
+        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
+        <img src="images/phil-5i0GnoTTjSE-unsplash.webp" alt="" />
+
+        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
+        <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.webp" alt="" />
+        <img src="images/phil-5i0GnoTTjSE-unsplash.webp" alt="" />
+        <img src="images/minh-pham-OtXADkUh3-I-unsplash.webp" alt="" />
+
+        <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.webp" alt="" />
+        <img src="images/minh-pham-OtXADkUh3-I-unsplash.webp" alt="" />
+        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
+        <img src="images/phil-5i0GnoTTjSE-unsplash.webp" alt="" />
+
+        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
+        <img src="images/phil-5i0GnoTTjSE-unsplash.webp" alt="" />
+        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
+      </div>
+    </section>
+
+    <div class="background-sand">
+      <section class="section section--prices">
+        <div class="section__title">
+          <h2 class="section__title__header">Le nostre Tariffe</h2>
+          <p class="section__title__description">Soggiorno minimo 3 Notti</p>
+        </div>
+
+        <div class="section--prices__container">
+          <div class="section--prices__price">
+            <h3>Aprile/Maggio</h3>
+            <ul>
+              <li>140€ a Notte - 2 Persone</li>
+              <li>155€ a Notte - 3 Persone</li>
+              <li>175€ a Notte - 4 Persone</li>
+            </ul>
+          </div>
+          <div class="section--prices__price">
+            <h3>Giugno</h3>
+            <ul>
+              <li>140€ a Notte - 2 Persone</li>
+              <li>155€ a Notte - 3 Persone</li>
+              <li>175€ a Notte - 4 Persone</li>
+            </ul>
+          </div>
+          <div class="section--prices__price">
+            <h3>Luglio</h3>
+            <ul>
+              <li>140€ a Notte - 2 Persone</li>
+              <li>155€ a Notte - 3 Persone</li>
+              <li>175€ a Notte - 4 Persone</li>
+            </ul>
+          </div>
+          <div class="section--prices__price">
+            <h3>Agosto</h3>
+            <ul>
+              <li>140€ a Notte - 2 Persone</li>
+              <li>155€ a Notte - 3 Persone</li>
+              <li>175€ a Notte - 4 Persone</li>
+            </ul>
+          </div>
+          <div class="section--prices__price">
+            <h3>Settembre</h3>
+            <ul>
+              <li>140€ a Notte - 2 Persone</li>
+              <li>155€ a Notte - 3 Persone</li>
+              <li>175€ a Notte - 4 Persone</li>
+            </ul>
+          </div>
+          <div class="section--prices__price">
+            <h3>Ottobre</h3>
+            <ul>
+              <li>140€ a Notte - 2 Persone</li>
+              <li>155€ a Notte - 3 Persone</li>
+              <li>175€ a Notte - 4 Persone</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section section--place-infos">
+      <div class="section--place-infos__info">
+        <h2>Scopri Monopoli</h2>
+        <p>
+          <span>Monopoli</span> rappresenta, sull’Adriatico, uno dei porti più
+          attivi e popolosi della regione puglia .Passeggiando per il
+          <span>centro storico</span> si scoprirà il borgo Medievale,
+          sovrapposto ai resti di un abitato messapico fortificato già nel V
+          secolo a.C., che si affaccia sul mare circondato da alte mura.
+        </p>
+        <p>
+          Un labirinto di viuzze, vicoli e piazzette in cui si concentra un
+          patrimonio storico-artistico.
+        </p>
+        <p>
+          Bellissimi locali vista mare, lungo la muraglia, faranno delle tue
+          passeggiate momenti di piacere e Relax.
+        </p>
+        <p>
+          Tantissime <span>calette, rocciose o sabbiose</span> fanno di
+          <span>Monopoli</span>
+          una città incantevole affacciata sul mare e con una grande storia e
+          vita da scoprire. Visitala soggiornando a
+          <span>Cala Verdegiglio</span>
+        </p>
+      </div>
+      <div class="section--place-infos__info">
+        <h2>Scopri la Puglia</h2>
+        <p>
+          <span>Cala Verdegiglio Home,</span> vanta una posizione strategica
+          unica, a soli 7km si può Raggiungere <span>Polignano a Mare,</span> la
+          famosa cittadina di Domenico Modugno, un paesino a picco sul mare
+          unico nel suo genere. A 13km si possono visitare le
+          <span> Grotte di Castellana</span> vivendo un momento di esplorazione
+          unico. A soli 15km si raggiunge <span>Fasano</span> con le sue
+          “Masserie Fortificate” e lo Zoo Safari, a 19 Km
+          <span>Alberobello</span> patrimonio mondiale dell’Unesco per i suoi
+          trulli.
+        </p>
+        <p>
+          Poi <span>Locorotondo, Ostuni</span> “la città Bianca”,
+          <span>Cisternino</span> e <span>Martina Franca</span> fanno di
+          Monopoli il posto giusto per visitare tutte le bellezze Pugliesi.
+        </p>
+      </div>
+    </section>
+
+    <div class="background-sand">
+      <section class="section section--itinerary">
+        <div class="section__title">
+          <h2 class="section__title__header">Itinerario consigliato</h2>
+          <p>
+            L’Itinerario consigliato per Visitare Monopoli parte da
+            <span>Largo Plebiscito</span> proseguendo con la passeggiata lungo
+            Via Garibaldi, antica via dei Mercanti, fino a giungere in
+            <span>Piazza Garibaldi</span>, luogo intriso di storia, che conserva
+            resti di diverse epoche. Consigliamo la Visita del
+            <span>Castello di Carlo V</span>, facente parte del sistema di
+            fortificazione spagnolo e ubicato su una delle zone più antiche
+            della città vecchia di <span>Monopoli</span>.
+          </p>
+          <p>
+            Camminando sul Lungomare si ammireranno gli imponenti Bastioni e lo
+            scorcio panoramico della Porta Vecchia con le Mura fortificate
+            cinquecentesche fino ad arrivare alla Basilica di Maria SS. della
+            Madia con i suoi fastosi interni, costruita su una preesistente
+            chiesa romanica, a cui è legata la legenda dell’Approdo dell’Icona
+            della Madonna della Madia del 1117.
+          </p>
+          <p>
+            Infine si possono ammirare i resti del vecchio Castello Normanno e
+            arrivare in Piazza Vittorio Emanuele II, cuore pulsante della città
+            nuova di Monopoli.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="section section--location">
+      <h2>Come raggiungere <span>Cala Verdegiglio Home</span></h2>
+
+      <h4>In Auto</h4>
+      <p>
+        Da Bari SS 16, da Brindisi SS 379 uscita Monopoli-Conversano fino ad
+        arrivare nei pressi dello Stadio Comunale e imboccare via Fiume.
+        Parcheggio pubblico sotto l’abitazione e in zona ( striscie bianche).
+      </p>
+
+      <h4>In Aereo</h4>
+      <p>
+        <span>L’aeroporto internazionale di Bari-Karol Wojtyla</span> dista 59
+        km (44 minuti in auto), collegato anche con il treno o il bus (
+        Terravision, Pugliaairbus) che ti condurranno direttamente alla Stazione
+        Centrale di Bari in circa 30 minuti. In alternativa possiamo organizzare
+        per te un comodo <span>transfer</span> con autista privato a pagamento.
+      </p>
+      <p>
+        <span>L’aeroporto del Salento di Brindisi-Casale</span>, dista 73 km,
+        (50 minuti in auto), collegato con bus navetta per la Stazione Centrale
+        di Brindisi.
+      </p>
+
+      <div class="section--location__container">
+        <div class="section--location__info">
+          <h3>Hai delle domande da farci</h3>
+          <p>scrivici a info@calaverdegiglio.it</p>
+          <p>o</p>
+          <div class="section--location__phone">
+            <span class="material-symbols-rounded"> android_dialer </span>
+            <p>+39 389 141 1435</p>
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section section--footer">
+        <a href="#" class="header__link-site"
+          ><span>Cala Verdegiglio</span
+          ><img
+            src="others/png_starfish_4761.png"
+            alt="starfish"
+            class="header__link-site__img"
+        /></a>
+
+        <div class="section--footer__contacts">
+          <p>
+            <span class="material-symbols-rounded"> android_dialer </span>+39
+            389 141 1435
+          </p>
+          <p>
+            <span class="material-symbols-rounded"> mail </span>
+            info@calaverdegiglio.it
+          </p>
+          <p>
+            <span class="material-symbols-rounded"> home_pin </span>Via Fiume,
+            43/E, 70043 Monopoli (Ba)
+          </p>
+        </div>
+
+        <p>Codice Identificativo Struttura (CIS)</p>
+        <p class="code-1">BA07203091000014709</p>
+
+        <p>Licenza Regionale</p>
+        <p class="code-2">SLBA000372-0018</p>
+
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+
+      <p class="copyright">
+        Copyright © 2022 www.calaverdegiglio.it | Powered by GM
+      </p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
