@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="summer home rent" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:wght@400;500;600;700&display=swap"
@@ -31,58 +40,119 @@
     <title>Home rent by Paolm</title>
   </head>
   <body>
-    <button class="contacts">
-      <span class="material-symbols-rounded"> chat </span>
-    </button>
+    <div class="contacts">
+      <a href="#" class="contacts__phone hidden">
+        <span class="material-symbols-rounded"> android_dialer </span>
+      </a>
+      <a
+        href="https://wa.me/3334445566"
+        target="_blank"
+        class="contacts__whatsapp hidden"
+      >
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+      <button class="contacts__btn" id="contacts">
+        <span class="material-symbols-rounded"> chat </span>
+        <p>Contattaci!</p>
+      </button>
+    </div>
 
     <ul class="flags">
       <li>
-        <a href="#" class="flags__link">
-          <img src="flags/gb.svg" alt="" />
+        <a href="index-eng.html" class="flags__link">
+          <img src="images/flags/gb.svg" alt="" />
           <span>en</span></a
         >
       </li>
       <li>
         <a href="#" class="flags__link"
-          ><img src="flags/it.svg" alt="" /><span>fr</span></a
+          ><img src="images/flags/fr.svg" alt="" /><span>fr</span></a
         >
       </li>
       <li>
-        <a href="#" class="flags__link"
-          ><img src="flags/fr.svg" alt="" /><span>it</span></a
+        <a href="index.html" class="flags__link"
+          ><img src="images/flags/it.svg" alt="" /><span>it</span></a
         >
       </li>
     </ul>
+
+    <div class="slider hidden">
+      <button class="slider__arrow slider__arrow--back">
+        <span class="material-symbols-rounded"> arrow_back_ios </span>
+      </button>
+      <button class="slider__arrow slider__arrow--forward">
+        <span class="material-symbols-rounded"> arrow_forward_ios </span>
+      </button>
+
+      <div class="slider__container">
+        <img
+          src="images/starfish.webp"
+          alt="current photo"
+          class="slider__img"
+        />
+      </div>
+
+      <div class="overlay">
+        <ul class="overlay__nav">
+          <li class="overlay__counter">
+            <span class="overlay__counter__current">x</span>/<span
+              class="overlay__counter__total"
+              >x</span
+            >
+          </li>
+          <li>
+            <button class="overlay__fullscreen">
+              <span class="material-symbols-rounded"> zoom_out_map </span>
+            </button>
+          </li>
+          <li>
+            <button class="overlay__zoom">
+              <span class="material-symbols-rounded"> zoom_in </span>
+            </button>
+          </li>
+          <li>
+            <button class="overlay__share">
+              <span class="material-symbols-rounded"> share </span>
+            </button>
+          </li>
+          <li>
+            <button class="overlay__close">
+              <span class="material-symbols-rounded"> close </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <header class="header">
       <a href="#" class="header__link-site"
         ><p>Cala Verdegiglio</p>
         <img
-          src="others/png_starfish_4761.png"
+          src="images/starfish.webp"
           alt="starfish"
           class="header__link-site__img"
       /></a>
       <ul class="header__nav">
         <li>
-          <a href="#">Servizi</a>
+          <a href="#services">Servizi</a>
         </li>
         <li>
-          <a href="#">Galleria</a>
+          <a href="#gallery">Galleria</a>
         </li>
         <li>
-          <a href="#">Tariffe</a>
+          <a href="#prices">Tariffe</a>
         </li>
         <li><a href="#">Contattaci</a></li>
       </ul>
-      <h1 class="header__heading-primary">Cala Verdegiglio</h1>
+      <h1 class="header__heading-primary">Cala Portopalo</h1>
       <h2 class="header__heading-secondary">Home</h2>
       <p class="header__location">Monopoli | Puglia</p>
-      <a href="#" class="header__link-book">Prenota</a>
+      <a href="#" class="header__link-book btn--cta">Prenota</a>
     </header>
 
     <section class="section section--description">
       <div class="section__title">
-        <h2 class="section__title__header">Cala Verdegiglio</h2>
+        <h2 class="section__title__header">Cala Portopalo</h2>
         <p class="section__title__description">
           La nostra storia è la nostra ospitalità
         </p>
@@ -91,7 +161,7 @@
       <div class="section--description__container">
         <div class="section--description__img-container">
           <img
-            src="images/kam-idris-_HqHX3LBN18-unsplash.webp"
+            src="images/resized/3.webp"
             alt="kitchen"
             class="section--description__img"
           />
@@ -113,7 +183,7 @@
           </h4>
           <ul class="section--description__list">
             <li>
-              <span>n.1 Camera da letto</span> matrimoniale con cabina armadio,
+              <span>n.1 Camera da letto</span> matrimoniale con cabina armadio
             </li>
             <li>bagno con doccia</li>
             <li><span>cucina/zona giorno</span> con divano letto</li>
@@ -145,7 +215,7 @@
       </div>
     </section>
 
-    <div class="background-gray">
+    <div class="background-gray" id="services">
       <section class="section section--services">
         <div class="section__title">
           <h2 class="section__title__header">Servizi</h2>
@@ -251,20 +321,20 @@
 
       <div class="section--rooms__container">
         <div class="section--rooms__room">
-          <img src="images/minh-pham-7pCFUybP_P8-unsplash.webp" alt="" />
-          <p>kitchen</p>
+          <img src="images/resized/2.webp" alt="" />
+          <p>Cucina</p>
         </div>
         <div class="section--rooms__room">
-          <img src="images/naomi-hebert-MP0bgaS_d1c-unsplash.webp" alt="" />
-          <p>bedroom</p>
+          <img src="images/resized/3.webp" alt="" />
+          <p>Letto</p>
         </div>
         <div class="section--rooms__room">
-          <img src="images/pixasquare-4ojhpgKpS68-unsplash.webp" alt="" />
-          <p>bathroom</p>
+          <img src="images/resized/4.webp" alt="" />
+          <p>Bagno</p>
         </div>
         <div class="section--rooms__room">
-          <img src="images/kenny-eliason-mGZX2MOPR-s-unsplash.webp" alt="" />
-          <p>terrace</p>
+          <img src="images/resized/5.webp" alt="" />
+          <p>Terrazzo</p>
         </div>
       </div>
     </section>
@@ -278,38 +348,71 @@
           favolose sulla terrazza vista mare, raggiungi la caletta “Verdegiglio”
           a soli 100mt da casa. Visita Monopoli ed esplora la Puglia.
         </p>
-        <button>Contattaci</button>
+        <button class="btn--cta">Contattaci</button>
       </section>
     </div>
 
-    <section class="section section--gallery">
+    <section class="section section--gallery" id="gallery">
       <div class="section__title">
         <h2 class="section__title__header">Galleria</h2>
       </div>
 
       <div class="section--gallery__container">
-        <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.webp" alt="" />
-        <img src="images/minh-pham-OtXADkUh3-I-unsplash.webp" alt="" />
-        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
-        <img src="images/phil-5i0GnoTTjSE-unsplash.webp" alt="" />
+        <img src="images/resized/2.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
+        <img src="images/resized/1.webp" class="small" alt="" />
+        <img src="images/resized/6.webp" class="small" alt="" />
 
-        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
-        <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.webp" alt="" />
-        <img src="images/phil-5i0GnoTTjSE-unsplash.webp" alt="" />
-        <img src="images/minh-pham-OtXADkUh3-I-unsplash.webp" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
+        <img src="images/resized/1.webp" class="small" alt="" />
+        <img src="images/resized/6.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
 
-        <img src="images/jason-briscoe-AQl-J19ocWE-unsplash.webp" alt="" />
-        <img src="images/minh-pham-OtXADkUh3-I-unsplash.webp" alt="" />
-        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
-        <img src="images/phil-5i0GnoTTjSE-unsplash.webp" alt="" />
+        <img src="images/resized/1.webp" class="small" alt="" />
+        <img src="images/resized/4.webp" class="small" alt="" />
+        <img src="images/resized/7.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
 
-        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
-        <img src="images/phil-5i0GnoTTjSE-unsplash.webp" alt="" />
-        <img src="images/kam-idris-_HqHX3LBN18-unsplash.webp" alt="" />
+        <img src="images/resized/4.webp" class="small" alt="" />
+        <img src="images/resized/7.webp" class="small" alt="" />
+        <img src="images/resized/8.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
+        <img src="images/resized/5.webp" class="small" alt="" />
+
+        <img src="images/resized/2.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
+        <img src="images/resized/1.webp" class="small" alt="" />
+        <img src="images/resized/6.webp" class="small" alt="" />
+
+        <img src="images/resized/2.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
+        <img src="images/resized/1.webp" class="small" alt="" />
+        <img src="images/resized/6.webp" class="small" alt="" />
+
+        <img src="images/resized/3.webp" class="small" alt="" />
+        <img src="images/resized/1.webp" class="small" alt="" />
+        <img src="images/resized/6.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
+
+        <img src="images/resized/1.webp" class="small" alt="" />
+        <img src="images/resized/4.webp" class="small" alt="" />
+        <img src="images/resized/2.webp" class="small" alt="" />
+        <img src="images/resized/5.webp" class="small" alt="" />
+
+        <img src="images/resized/4.webp" class="small" alt="" />
+        <img src="images/resized/7.webp" class="small" alt="" />
+        <img src="images/resized/8.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
+        <img src="images/resized/5.webp" class="small" alt="" />
+
+        <img src="images/resized/2.webp" class="small" alt="" />
+        <img src="images/resized/3.webp" class="small" alt="" />
+        <img src="images/resized/1.webp" class="small" alt="" />
+        <img src="images/resized/6.webp" class="small" alt="" />
       </div>
     </section>
 
-    <div class="background-sand">
+    <div class="background-sand" id="prices">
       <section class="section section--prices">
         <div class="section__title">
           <h2 class="section__title__header">Le nostre Tariffe</h2>
@@ -475,7 +578,7 @@
         <div class="section--location__info">
           <h3>Hai delle domande da farci</h3>
           <p>scrivici a info@calaverdegiglio.it</p>
-          <p>o</p>
+          <p class="section--location__divider">o</p>
           <div class="section--location__phone">
             <span class="material-symbols-rounded"> android_dialer </span>
             <p>+39 389 141 1435</p>
@@ -490,7 +593,7 @@
         <a href="#" class="header__link-site"
           ><span>Cala Verdegiglio</span
           ><img
-            src="others/png_starfish_4761.png"
+            src="images/starfish.webp"
             alt="starfish"
             class="header__link-site__img"
         /></a>
@@ -498,30 +601,30 @@
         <div class="section--footer__contacts">
           <p>
             <span class="material-symbols-rounded"> android_dialer </span>+39
-            389 141 1435
+            333 444 4432
           </p>
           <p>
             <span class="material-symbols-rounded"> mail </span>
-            info@calaverdegiglio.it
+            info@provaprova.it
           </p>
           <p>
-            <span class="material-symbols-rounded"> home_pin </span>Via Fiume,
-            43/E, 70043 Monopoli (Ba)
+            <span class="material-symbols-rounded"> home_pin </span>Via
+            Asdrubale, 10/B, 70043 Monopoli (Ba)
           </p>
         </div>
 
         <p>Codice Identificativo Struttura (CIS)</p>
-        <p class="code-1">BA07203091000014709</p>
+        <p class="code-1">BAXXXXX989XXX98XX</p>
 
         <p>Licenza Regionale</p>
-        <p class="code-2">SLBA000372-0018</p>
+        <p class="code-2">SLBAXXXX98232-3418</p>
 
         <ion-icon name="logo-facebook"></ion-icon>
         <ion-icon name="logo-instagram"></ion-icon>
       </div>
 
       <p class="copyright">
-        Copyright © 2022 www.calaverdegiglio.it | Powered by GM
+        Copyright © 2022 https://house-rent-by-paolm.netlify.app/
       </p>
     </footer>
 
