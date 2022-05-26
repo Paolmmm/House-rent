@@ -144,10 +144,9 @@ slider.addEventListener("click", (e) => {
     console.log(btn);
 
     if (icon.innerText === "zoom_in") {
-      sliderCurrentImg.style.width = "100%";
-      sliderCurrentImg.style.height = "auto";
+      sliderCurrentImg.style.width = "auto";
+      sliderCurrentImg.style.height = "100%";
       sliderContainer.style.justifyContent = "unset";
-      sliderContainer.style.alignItems = "start";
       icon.innerText = "zoom_out";
     } else {
       [sliderCurrentImg, sliderContainer].forEach((el) =>
