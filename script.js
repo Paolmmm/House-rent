@@ -141,12 +141,12 @@ slider.addEventListener("click", (e) => {
 
   if (btn.classList.contains("overlay__zoom")) {
     const icon = btn.querySelector("span");
-    console.log(btn);
 
     if (icon.innerText === "zoom_in") {
-      sliderCurrentImg.style.width = "auto";
-      sliderCurrentImg.style.height = "100%";
-      sliderContainer.style.justifyContent = "unset";
+      sliderContainer.clientHeight < sliderContainer.clientWidth
+        ? (sliderCurrentImg.style.height = "auto")
+        : (sliderCurrentImg.style.width = "auto");
+
       icon.innerText = "zoom_out";
     } else {
       [sliderCurrentImg, sliderContainer].forEach((el) =>
