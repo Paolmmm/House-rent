@@ -1,6 +1,6 @@
 dist
 .parcel-cache
-mode_modules
+node_modules
 content.mode_modules
 full-landpage.png
 style.css
